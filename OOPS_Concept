@@ -1,0 +1,34 @@
+Data Hiding:: Technnique to hide internal data objects.
+It helps in achieving data security using authentication and private access modifiers.
+
+Abstraction :: Hiding the internal background or implementation and only showing essential things to users is abstraction.
+
+We can achieve abstraction using interfaces and abstract classes. Abstract classes can not be instantiated and can have abstract as well as concrete methods.
+Advantage of abstraction is modularity, security and maintenance.
+
+Encapsulation :: Grouping of data members and methods in single unit.Class is capsule or container of data and methods.
+
+Encapsulation= Data hiding+ Abstraction
+
+Inheritance:: It "IS A Relationship". Mechanism to create new class, deriving from base class.
+Advantage is reusability of code.
+
+Types:
+Single Level
+Milti level
+Multiple
+Hierarchical
+Hybrid
+
+Association :: It is "Has A Relationship". Establishing relationship between two different classes using thrie objects.
+
+Two forms of Association::
+Aggregation
+Composition
+
+An associiation is said to be aggregation if both entities that are associated can exist independently. eg Office has employee
+and College has teacher.
+
+Composition ::Stronger form of Association.Two entities are highly dependent on each other.
+
+Diff between Aggregation and Composition is that in aggregation contained object can survive without the container.

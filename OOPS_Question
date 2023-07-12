@@ -1,0 +1,153 @@
+
+1)What are classes and objects?
+-->Classes are user-defined blue print from which objects are created, which has methods and attributes.
+
+2)Types of modifiers present in Java?
+-->Two types of modifiers:: Access modifier. --Keywords which set accessibility of any method or member or class.
+                            Non-Access modifier.
+
+3)How many types of access-modofiers present?
+public:: Can be accessed anywhere, in any package, in any class.
+private::Can be accessed only in class where they are defined.
+protected::Can be accessed within same package and its subclass.
+default:: When there is no modifier used, then its default.The defualt class and its members can be accessed only in their package.
+
+4)What is package?
+Mechanism to keep all the classes, interfaces and sub-packages with same functionality at one place.It creates proper folder structure to keep them
+and helps in easy searching.
+
+Can top level class be private? No, only public or default.
+
+Which access modifier is least restrictive and which is most restrictive?
+Least restrictive:: public
+Most restrictive::private
+
+What are non-access modifier in java?
+a)static:: Used to define whether a member is class memeber.
+
+b)final:: Used to restrict further modification on any class, method and variable.
+If any primitive is defined as final, then its value can not be throughout in the program.
+
+c)abstract ::Used to mark any class or method as incomplete and it needs to be implemented.
+
+d)synchronized::Used to ensure thread safety in multithreaded environment when multiple threads execute same task simultaneopusly.
+
+Can a class be defined abstract and final at the same time?
+No becuase final restrict further modification.
+abstract marks method/class to be implemented.
+
+What is abstract method?
+method with no definition and it is defined in abstract class.
+
+Can we define abstract class in non-abstract class?
+No
+
+Can we mark abstract class as private?
+No, becuase it need to be accessed in other classes, so it must be public, default or protected
+
+Can we instantiate abstract classes?
+No, becuase abstarrct classes are not fully implemented.
+
+Can we define top class as static?
+No, static is only for class members.
+
+What is a variable and what are the types of variables in Java?
+Variable is a container whioch stores data value. It is a name which is given to a memory shell.Variable can store primitive or objects.
+Class can have below variables::
+
+instance variable::Defined inside class, outside any method.
+local variable::Defined inside method.
+static variable::Defined inside any class, outside method and with static keyword.
+
+When are static variables loaded in memory?
+Static variables are loaded in memory at time of class loading, when we load the class, static varibles are first to get loaded.
+
+Are there any global variables in java?
+No, encapsulation does not allow class to have global variables.
+
+Can we declare final variables without initialization?
+Yes, we call it blank final variables.We have to initialize blank final variables before any usage.
+
+static blank final variable can be initialized in static blocks.
+
+Can we make local variable final?
+Yes, it is the only variable acceptable to local variable.
+
+
+What is constructor?
+Special kind of method used to initialize objects.
+
+Various types of constructors::
+a)default constructor:: If we dont define any constructor.
+b)Non parametrized constructor:: Constructor with no argument.
+c)Parameterized constructor:: Constructor with arguments.
+
+Can a constructor be final or abstract or static?
+
+No, class can not be final becuase constructor itself can not be modified or overwritten by any other class, so no need of final.
+
+abstract have only declaration, so constrtuctor can not be abstract.
+
+static dont below to objects.
+
+Can we have return type or return method with constructor?
+The answer is No .
+
+What is the use of private constructor in java?
+private constructor can only be instantiated inside the class where it is defined. No other class can create objects of this class.
+
+Can a constructor return any value?
+There is no return type specified, but it returns objects implicitly.
+
+Can an abstract class have constructor?
+Yes, 
+
+How we define method in java?
+Method is a block of code which can be invoked by its name.
+
+What is method signature?
+method name and the data type of parameters it has.
+
+Does return type of method is part of method signature?
+No
+
+What are static methods?
+static methods are used to access static variables.
+
+Can we access instance variables inside static method?
+No
+
+What are method declaration?
+When we dont define method body and end it with semicolon.Its used in interfaces and abstract class.
+
+What is interfaces?
+It has abstract and public method with declaration.It specifies what a class must do.
+
+What is native method?
+method written in any other language.
+
+Can we create objects of final class?
+Yes, eg String.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

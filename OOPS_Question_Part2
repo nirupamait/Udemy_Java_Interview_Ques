@@ -1,0 +1,41 @@
+What are OOPS advantages?
+1)Simplicity:: Consist of real world objects.
+2)Modularity::Each object forms a separate entity.
+3.Modifiability::It is easy to change the object's class and methods.
+4.Extensibility::Ability to modify the existing behavior by adding new features.
+5.Reusability::Objects can be reused in different programmes.
+6.Maintanability::Objects can be maintained by fixing the problems easily.
+
+What are different types of Inheritance?
+1)Single inheritance:: A class extends another class.
+
+class A{}
+class B extends A{}
+
+2)Multileve inheritance::More than one class extends the base class.
+
+class A{}
+class B extends A{}
+class C extends B{}
+
+3)Multiple Inheritance:: Class extends more than one class.It creates ambiguity when same method is present in both classes.
+However, class can implement more than one interface.
+
+4)Hierarchical Inheritance:: It is about having single base class and multiple implementation classes.
+class A{}
+class B extends A{}
+class C extends A{}
+
+5)Hybrid inheriatnce::It is about having multiple base and implementation classes.
+Not supported in java.
+
+6)Cyclic inheritance::Class extends itself.Its not required in jva.
+
+What is diamond access problem?
+When class extends more than one class, then there is chance of ambiguit which is called diamond access.
+
+
+
+
+
+

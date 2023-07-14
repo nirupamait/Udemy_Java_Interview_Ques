@@ -1,0 +1,38 @@
+Why dont we need to import java.lang package?
+->Becuase all classes in this package are imported by default.
+eg System
+
+Name few classes of java.lang package?
+Wrapper,String,Thread,Throwable,StringBuffer,StringBuilder,System
+
+What is the base class for every class?
+Object class is the base class for every class.
+
+Why java.lang is the base class for very class?
+Object class many important method like equals(),hashCode() etc.
+To make it available for others classes, it is made as base class.
+
+What are common methods provided by Object class?
+eg:: equals():: Checks whether two objects are equal.Compares references of two objects.
+
+to String():: Returns the string representation of an object.
+
+hashCode(0:Returns the hashcode value for the object.
+
+clone():: Creates and returns copy of the object.
+
+getClass()::Returns the runtime class for the object.
+
+wait(), notify(), notifyAll():: Play role in synchronizing the activities of independently running threads in any program.
+
+finalize():: This is calle dby garbage collector on any object.Its deprecated since java 9.
+
+What is hashCode()?
+For very object, JVM generates a unique number which is actually the hashcode value.It is used to search the object in the collection.
+It is not the address of the object.
+
+What is the difference between object and object reference?
+An object is an instance of a class.Object reference is pointer to that object.
+There can be many references to that object.
+
+

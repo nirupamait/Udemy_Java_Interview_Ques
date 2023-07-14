@@ -1,0 +1,99 @@
+Is String a datatype?
+-->String is not primitive like int, char.It is a class which comes under java.lang package.
+
+Is String a wrapper class?
+No
+
+How String is different from Char array?
+1.Both of them represents same set of characer, but String represent it as single datatype while Char array represent it as collection of data type.
+
+2.String is immutable but char array is not.
+
+3.String provides various inbuilt function like substring etc but char array dont.
+
+4.String can be stored at any place in memory but char array elements need to be stored contiguously in memory with increasing locations.
+
+5.Strings are stored in String pool, whereas Character array is stored in heap in JVM.
+
+
+What is String pool?
+It is an area in heap memory where String objects are stored.In String pool, there will be no String objects with same content.
+It helps in removing redundant String .
+eg String abc="John"
+   String def="John"
+
+Both will point to same object.
+
+How these statements are different?
+1.String str="Basic"
+2.String newStr=new String("Basics");
+
+1.Creates string object using literal.
+2.Creates using new operator in JVM memory.
+
+What is String interning?
+Used to create string in String pool area.
+
+How many objects will be created?
+String s1="BasicsStrong";
+String s2=new String("BasicsStrong");
+String s3="BasicsStrong";
+String s2=new String("Basics");
+
+4 objects will be created. 2 inside scp and two heap.
+
+Why String is immutable and final in java?
+-->It increases security.It makes it good choice to use immutableringBuffer is thread safe and object is multi-threaded environment.
+
+Can we create immutable class in java?
+yes, we need to create class as final, fields as private final and no setter method.
+
+Is String a keyword in java?
+No, String is a class.
+
+Which of the following is better to store password String or Char array?
+-->String is not recommended because of its immutability.Once created, it is always stored as string pool in memory, unless garbage collector 
+earse it.It is a security risk, as anyone having access to memory can find it.
+char array can be modified and we can set elements of char array blank or null, once we are done with it.
+
+Difference between String, StringBuffer and StringBuilder?
+String is immutable, so whenever we manipulate String, it creates new and makes older string for garbage collection.
+It makes lot os string to get cleaned by garbage.
+
+StringBuffer and StringBuilder are not immutable.
+StringBuffer is thread-safe and synchronized whereas StringBuilder is not thread-safe.So, its more faster.
+Both has not overrided equals method of Object, so Object's equals gets called.
+
+How to check if the two String are equal?
+Using the == and equals method.
+
+The == checks for reference and equals checks for the content
+
+String has overrided the equals method of Object and checks for the content.
+
+What will be output of following code snippet?
+String s1="Basics";
+StringBuffer s2=new StringBuffer("Basics");
+S.o.p(s1.equals(s2));
+
+false because String equals can not compare two different type of object.
+
+How to convert String to charArray and byteArray?
+-->To get char array we use, toCharArray.
+getBytes is used to get byteArray.
+
+What does substring() do?
+It creates a new string by taking portion of string.
+
+Which one of following is final?String, StringBuffer and StringBuilder.
+All.But String is immutable.
+
+
+
+
+
+
+
+
+
+

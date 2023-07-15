@@ -1,0 +1,16 @@
+What is the use of Math class?
+Math class provides many functions like abs(),sqrt(),log(),exp()
+
+Can we instantiate Math class?
+No becuase it is final and its constructor is private.
+
+Without creating instance how can we call the Math class functions?
+All methods are static.
+
+What is Autoboxing and Unboxing?
+AutoBoxing:: Automatically convert primitive type like int to boxed primitive that is Object or Integer wrapper class.
+Unboxing is just opposite of that.It convert Integer to int.
+
+When do Autoboxing and Unboxing occur?
+
+Autoboxing occur when Object is expected and primitive is available.

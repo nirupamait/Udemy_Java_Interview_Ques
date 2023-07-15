@@ -1,0 +1,13 @@
+What are Local inner classes?
+Local inner classes are those classes defined inside block or method.
+-->Local inner classes are used to define specific required functionality for that method.
+Local inner class's scope is limited to that method and is rarely used.
+
+Can we access local variable of the wrapping method inside local inner class?
+-->Yes, we can access final or non-final method inside local inner class but we can not modify them.
+
+What access modifier can be used with local inner class?
+-->Local inner is the local inner of the method, so it can not be public, private, protected.
+It can only be final or abstract.
+
+

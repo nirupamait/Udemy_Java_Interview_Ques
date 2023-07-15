@@ -1,0 +1,42 @@
+What is inner class?
+Any class which is not top level class and which is declared inside another class.
+eg::
+class OuterClass{
+ class InnerClass{
+}}
+
+What  are the types of Inner classes?
+1. member inner class|Regular inner class
+2.Local inner class
+3.Anonymous inner class
+4.Static nested class
+
+What is member inner class?
+It is regular inner class of top level class.It acts as the instance member of the outer class.
+To access this class, we must create the object of outer class.
+
+member inner class can be public, private, default, protected, 
+
+What is the difference between static nested class and member nested class?
+Static nested class is statioc inner class declared inside another class.
+
+class Demo{
+  static class Nested{
+  s.op
+}
+}
+
+To create an instance of member inner class, instance of Outer class is required, whereas static nested class does not require any
+Outer class instance.
+
+Demo.Nested nest=new Demo.Nested();
+
+In Member Inner class/Non-sstatic nested class, we can access all the static and instance variables of the Outer class.
+Where as inside static nested class, we can access only static members of the Outer class.
+
+We can not declare static methods insdie regular inner class, but we can declare static methods inside static inner class.
+
+
+
+
+

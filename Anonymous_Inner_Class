@@ -1,0 +1,33 @@
+What is Anonymous Inner Class?
+Class which does not have name to reference and initialized at the same place where created.For Anonymous inner class, only a single object is created.
+
+An anonymous inner class always extends a class or implements interface.
+
+When should we use Anonymous inner classes?
+Anonymous inner classes can be used while making an instance of object with certain additional funcstionalities like overriding of method,
+method overloading . eg It can be used to create Thread class while overriding run method.
+
+We can also create by implementing runnable interface.
+
+Can we create constructor in Anonymous inner class?
+We dont have name of the class, so we can not create constructor in anonymous inner c lass.
+
+What is the difference between Regular inner class and anonymous inner class?
+-->Normal class can extend one class and implements many interfaces at the same time.But anonymous inner class can eithe extend or implement
+one interface/class at any given time.
+
+-->We can create constructor itself in the normal  class but we can not in case of anonympus inner class.These classes are initialised at the 
+time of creation with the default constructor.
+
+-->We write normal classes for general requirement but we write anonymous inner class when we dont need any separate class or temporary
+requirement.s
+
+Can we have static members inside anonymous inner class?
+No, we can not declare static data member and static methods inside anonymous inner class or any inner class except
+static inner class.
+
+
+
+
+
+

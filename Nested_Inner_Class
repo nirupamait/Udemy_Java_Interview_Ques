@@ -1,0 +1,13 @@
+What are advantages of nested inner classes?
+We use nested class when it is useful to only one class.So, keeping them together helps in packaging of class.
+By using Inner class, we develop more readable and maintenable code, becuase it logically groups the classes in one place.
+With inner class we can access outer class private variables and at the same time we can access hide inner class from outside world.
+It can help in code optimization as it require less code to write.
+
+Can we write nested Interface inside interface?
+yes.
+When interface is required for one interface only, then we may write Interface inside another interface.
+eg:: Entry interface inside Map interface which represents key-value.
+
+Inner interfaces which are declared inside interfaces are always public and static, even if we do not make them public and statioc independently.
+Inner interfaces can be implemented independently.

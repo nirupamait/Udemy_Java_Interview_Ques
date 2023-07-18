@@ -1,0 +1,143 @@
+What is Enum?
+Enum is a special type in java that is used to define collection of constants.
+Enum of colors::
+
+enum Color{
+  Red,Green,Blue,White,Blue;
+}
+By using enum, we create our own datatype.Datatype of Red is 'Color'
+
+Where can we declare enum type?
+Can be declatred outside the class and inside the class.
+But we can not declare inside method.
+
+How to access enum constants?
+Every enum constant is static, so we can access it using static.
+
+How to get all constants of enum?
+For that we have values() method, that can be invoked with enum name or enum instance.
+
+Color[] colors=Color.values();
+for(Color c:colors)
+{
+  s.o.p(c);
+}
+
+Enum provides values implicitly. It is not present in the Enum class or object.
+
+What is the difference between enum, Enum and Enumeration?
+1. enum:: It is a keyword to declare group of constants.
+2.Enum::It is base class for all enums.
+Every enum is direct child of Enum class.
+3.Enumeration::It is interface present in java.util package.
+It has cursor which is used to get access element one by one.
+
+Can enum be declared as final?
+No, enum is implicitly final.
+
+Can enum extend any class.
+No,as enum extends Enum.Java does not support multiple inheritance.
+
+Can enum have implementation classes?
+No, becuase enum is final class.
+
+Can enum implement interfaces?
+Yes, because enum is like class and interface.
+
+Can we have constructor in enum?
+Yes we can have variables, methods and constructor.
+
+enum Week{
+ SUN,MON,TUES,WED;
+int a;
+Week(){
+}
+public void m1(){
+}
+}
+
+How constructors are invoked in enum?
+Everytime we load the enum, constructor is invoked.
+Every enum constant is considered as enum object.
+
+
+Can we create enum object explicitly?
+No, we can not create enum with new keyword.
+It is created implicitly.
+
+Can we create parameterised constructor in enum?If yes then how to pass value to constructor?
+yes, we can create enum constructor parameterised
+Sun("Holiday")
+
+Can Enum have abstract methods?
+No, becuase Enum are final.
+
+Can we override toString() method for enum?
+Yes, But there is no need to override it because enum class has already overidden the toString() method for
+every enum.
+
+Can we create enum constant outside on enum?
+No
+
+Can constructors be public in enum?
+No, constructor can not be public or protected either.
+
+What does ordinal() method do?
+It returns the order of 'enum' constants.
+
+Can we use enum with TreeSet or TreeMap?
+yes, becuase enum implements Comparable interface.
+
+Can we use Enum in switch case in Java?
+yes, becuase enum instances are constants, so we can use them in switch case.
+
+Is Enum serializable in java?
+yes, because Enum implements Serializable interface.
+
+How to convert String to enum in java?
+enum provides valueOf method which takes String as argument.
+
+What are benefits of enum in java?
+enum are typesafe, we can not assign anything other than those predefined constants.
+enum can be used in switch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

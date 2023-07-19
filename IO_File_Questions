@@ -30,6 +30,36 @@ There are two readers to read file::
 FileReader
 BufferedReader
 
+Difference between FileReader and BufferedReader?
+-->FileReader reads the data from file in the forms of characters..
+FileReader fr=new FileReader("abc.txt");
+char[] ch=new char[int(f.length())];
+fr.read(ch)
+
+for(char ch1:ch)
+{
+  s.o.p(ch1);
+}
+
+With FileReader we read the file character by character,not by line.
+For that we have BufferedReader.
+
+BufferedReader allows us to read the file by char and by line too.
+
+
+            Object
+            |      |
+            |      |
+            |      | 
+            |      | 
+          Reader     Writer
+InputStreamReader,         OutputStreamWriter,
+BufferedReader              BufferedWriter,PrintWriter
+ |                                   |
+ |                                   | 
+FileReader                           FileWriter
+
+
 
 
 

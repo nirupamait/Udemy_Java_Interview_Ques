@@ -1,1 +1,49 @@
 
+When we had these two writers, what is the need of PrintWriter then?
+-->PrintWriter is the most enhanced writer. It overcomes the little limitation that we had with FileWriter and BufferedWriter.
+eg:: We were allowed to write char and String only with those writers, what if we write to type different type of dataType?
+PrintWriter allows us to do so.
+
+-->PrintWriter can communicate directly to file and also can communicate via any other writer.
+
+PrintWriter pw=new PrintWriter("abc.txt");
+PrintWriter pw=new PrintWriter(new FileWriter("File.txt"));
+
+PrintWriter pw=new PrintWriter("abc.txt");
+pw.write(100); //this will write 100 to file.
+pw.println(100); //this will write int 100 and will separate line.
+pw.println(true); //this will print boolean true and will separate line.
+pw.flush();
+pw.close();
+
+
+Why we use flush() and close() ?
+flush() is used to flush all the characters in the buffer and clear the buffer.It flushes the stream so that we can get assured that data
+has written to file.
+close() method is used to close the character stream and it releases system resources associated with stream.
+
+Note that flush is applicable for all writers and close() is for all readers and writers.
+
+
+How to read any file?
+There are two readers to read file::
+FileReader
+BufferedReader
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

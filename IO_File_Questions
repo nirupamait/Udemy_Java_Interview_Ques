@@ -60,6 +60,97 @@ BufferedReader              BufferedWriter,PrintWriter
 FileReader                           FileWriter
 
 
+When to use FileOutputStream and FileWriter?
+-->To write something to a file, we use FileOutputStream and FileWriter etc.
+With FileOutputStream we can write byte oriented as well as character oriented data.
+But note that it is always prefer to use FileWriter/PrintWriter to write character data to file.
+
+What are the FilterOutputStream and FilterInputStream?
+-->FilterOutputStream is another implementation of OutputStream.
+It further hjas different implementation class: BufferedOutputStream.
+DataOutputStream
+
+Similarly, FilterInputStream have subclasses like BufferedInputStream.
+DataInputStream
+
+Which superstructure class allows reading data from an input byte stream in the form of primitive data types?
+-->DataInputStream class is used to read primitive data .like readInt(), readByte(), readchar(), readDouble(),
+readBoolean().
+DataInputStream() can not communicate directly to files.
+DataInputStream ds=new DataInputStream(new FileInputStream("File.txt"))
+
+How BufferedOutputStream is different from BufferedWriter?
+-->BufferedOutputStream is used for writing raw bytes whereas BufferedWriter is used to write characters.
+
+BufferedWriter--Provides buffering for writer instances which makes performance faster.
+BufferedOutputStream--Used for buffering Output stream.
+
+What is the difference between InputStreamReader and BufferedReader?
+-->InputStreamreader used to create a new InputStream object that can be used to read data from specified source.
+It reads bytes and decodes them in characters.
+BufferedReader is an abstraction that reads text from a character inout stream.It buffers characters so as to provide efficient
+reading of characters and lines.
+
+-->BufferedReads a couple of characters from specified stream and store it in a buffer.
+This makes input faster.
+InputStreamReader reads only one character from tyhe specified stream and remaining characters still remain in the stream.
+
+
+What do you know about add-on classes?
+--> add-on classes are classes which provide additional functionality eg:
+BufferedOutputStream, BufferedInputStream, BufferedWriter-- buffers the stream and improve the performance.
+
+
+What classes allows you to convert byte streams to characters and back?
+-->OutputStreamWriter
+InputStreamReader
+
+Explain hierarchy of OutputStream and InputStream?
+InputStream::
+FileInputStream, ByteArrayInputStream, ObjectInputStream, FilterInputStream--DataInputStream,BufferedInputStream
+
+OutputStream::
+FileOutputStream, ByteArrayOutputStream, ObjectOutputStream, FilterOutputStream--DataOutputStream, BufferedOutputStream
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

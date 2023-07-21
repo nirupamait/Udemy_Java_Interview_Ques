@@ -1,1 +1,89 @@
+What is NIO?
+NonBlocking IO.It provides bettery approach for file handing than standard IO.
+It uses channell and buffers.
+Introduced in 1.4 and 1.7.
+
+What are the fundamental components of NIO?
+-->Channel
+-->Buffers
+-->Selector
+-->Non-blockig IO
+
+Channels and Buffers:: Data is written from buffer to channel and from channel to buffer.
+Selectors:: Are used to monitor multiple channels for the events like when data is arrived, and connection is opened.
+
+Non-Blocking IO:: Threads are allowed to go on and do something else in mean time of performing any task.
+
+In which packag the nio classes are present?
+-->java.nio.*
+java.nio.channel
+java.nio.file
+java.nio.charset
+and many more
+
+What is channel and how many channels are there in java?
+-->In NIO, channel is the medium to transfer data efficiently.
+It is an interface which provides access to low-level I/O services in a controled way.
+Method::
+IsOpen:: This tells whether channel is opnen
+close::It closes the channel
+
+Channel::
+DatagramChannel
+SocketChannel
+FileChannel
+ServerSocket Channel
+
+
+Which channel is used for reading the data from files?
+-->FileChannel. It is used for reading data from files.We can not create its object directly as it is an abstract class.
+For object creation- getChannel() method is used
+
+What other channels are used for?
+DatagramChannel:: Used to transfer data over network via datagram protocol UDP.
+SocketChannel:Can read write data over network using TCP
+ServerSocketChannel:Allows user to listen incoming TCP connection.
+
+Note that for every incoming connection socket channel is created.
+
+
+What are NIO buffers?
+NIO Buffers are used to make interaction with NIO channels.
+Block of memory into which we can write data and read data from.
+In NIO system, this buffer is blocked with NIO Buffer.
+
+How many buffers arte there in java?
+InBuffer
+CharBuffer
+LongBuffer
+DoubleBuffer
+ShortBuffer
+FloatBuffer
+
+
+ByteBuffer::Most commonly used buffer
+
+
+How to create ByteBuffer?
+To create Bytebuffer, we need to allocate buffer.For that we need to call allocate method.
+ByteBuffer b=ByteBuffer.allocate(capacity)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -68,6 +68,62 @@ How to create ByteBuffer?
 To create Bytebuffer, we need to allocate buffer.For that we need to call allocate method.
 ByteBuffer b=ByteBuffer.allocate(capacity)
 
+Can we transfer data between channels?
+-->Yes, In java NIO we can transfer data directly betwwen channels. Methods present in FileChannel.
+FileChannel.transferTo()--Allows data transfer from file channel to some other channel.
+FileChannel.transferFrom()--Allows data transfer from other channel to file channel.
+
+What do you understand by Gather write and Scattering reads?
+Scattering reads:: is reading the data from a single channel into miultiple buffers
+Gathering writes:: is writing data from multiple buffers into single channel.
+
+We have ScatteringByteChannel and GatheringByteChannel for this.
+
+What Selectors are used for?
+-->Selectors are used to handle multiple channels using single thread.
+Selectors are created as::
+Selector selector=selector.open();
+
+--> invoke the register() method on various channel objects to register our interest in various I/O events.
+
+What is the difference between IO and NIO?
+IO deals with data in streams whereas NIO deals with data in blocks.
+IO is stream oriented and NIO is buffer oriented.
+
+IO streams are blocking and NIO are non-blocking.
+
+What do threads do in the mean time?
+-->Threads spend their time in performing IO on some other channels.
+-->Im NIO, a single thread can manage multiple channels.NIO have selectors for selecting or registering in different channels.
+
+If you have three sockets, how many thread you will need to handle that?
+-->Using NIO we can operate multiple channels using single thread.
+
+What is the byte order of Byte buffer?
+-->Byte order is the order in whic multi byte quantity is tored in the memory.There are two types of byte order::
+Big-Indian
+Little-Indian
+
+Byte buffer has BigEndian as its default byte order.
+
+
+What is the difference between direct and Non-direct buffer in java?
+Non direct buffer is wrapper around byte array and exist inside heap whereas direct buffer resides outside of JVM and memory is not allocated
+for it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
